@@ -114,7 +114,6 @@ header{
 .bg-img{
     height: 40vh;
     width: 100%;
-    background-image: url("/img/jumbo-about.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
