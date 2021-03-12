@@ -54,7 +54,7 @@ table {
 }
 
 html, body {
-    height: 100%;
+    
     font-family: 'Roboto', sans-serif;
 }
 
@@ -71,7 +71,7 @@ p {
 /* ==========================Complete Top Nav Section===================================== */
 header{
     display:flex;
-    height: 15%;
+    height: 10rem;
 }
 
 .lambda{
@@ -88,6 +88,7 @@ header{
     background-image: url("/img/lambda-black.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 .top-nav{
     display: flex;
@@ -105,8 +106,108 @@ header{
 
 /* =============================================================== */
 
+.about-page{
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+.bg-img{
+    height: 40vh;
+    width: 100%;
+    background-image: url("/img/jumbo-about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-page h2{
+    margin-top: 3%;
+    margin-left: 2.5%;
+    margin: 3% 0% 2% 2.5%;
+    font-size: 1.5rem;
+}
+.about-page p{
+    margin-left: 2.5%;
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+}
+/* ================================================== */
+
+.middle-part{
+    display: flex;
+    flex-flow: row wrap;
+    border: black 0.2rem;
+    border-style: dashed none none none;
+    justify-content: space-between;
+    
+
+}
+.box{
+    width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border:black 0.2rem;
+    border-style: none none dashed none;
+    display: flex;
+    flex-direction: column;
+    
+    align-content: space-evenly;
+    padding: 0%;
+}
+.box img{
+    width: 100%;
+    height: 50%;
+}
+
+.box h3{
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.box p{
+    margin: 0%;
+}
+
+.box div{
+    margin-top: 2%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 13%;
+    width: 25%;
+    border: solid 0.2rem black;
+    border-radius: 10px;
+}
+.box div a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+@media(max-width:1500px){
+    .box div a{
+        font-size:1rem;
+    }
+    
+}
+@media(max-width:900px){
+    .box div a{
+        font-size:1rem;
+        font-size: 0.7rem;
+    }
+}
 
 
+
+
+
+/* ================================================== */
+.container.about-page{
+    width: 100%;
+}
 
 
 
